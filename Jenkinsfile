@@ -14,12 +14,6 @@ pipeline {
             }
         }
         
-         stage('compile-package') {
-            steps {
-                def mavenhome = tool name: 'maven_3_6_3', type: 'maven'
-                sh "${mavenhome}/bin/mvn package"
-            }
-        }
     }
     
     post {
