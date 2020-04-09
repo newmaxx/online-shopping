@@ -17,7 +17,7 @@ pipeline {
         stage('compile-package') {
             steps {
                 
-                sh 'clean install'
+                bat 'clean install'
             }
         }
         
